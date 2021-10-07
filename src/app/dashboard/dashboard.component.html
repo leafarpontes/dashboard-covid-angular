@@ -1,0 +1,33 @@
+<h4 class="text-center my-4">Selecione a quantidade de casos confirmados em cada mês</h4>
+
+<form #formDados="ngForm">
+    <div class="row form-group">
+        <div class="col">
+            <label for="casosJunho">Casos em Junho</label>
+            <input type="number" name="casosJunho" id="casosJunho" [(ngModel)]=dadosModel.casosJunho
+                #casosJunho="ngModel" class="form-control">
+        </div>
+        <div class="col">
+            <label for="casosJulho">Casos em Julho</label>
+            <input type="number" name="casosJulho" id="casosJulho" [(ngModel)]=dadosModel.casosJulho
+                #casosJulho="ngModel" class="form-control">
+        </div>
+    </div>
+    <div class="row form-group mb-3">
+        <div class="col">
+            <label for="casosAgosto">Casos em Agosto</label>
+            <input type="number" name="casosAgosto" id="casosAgosto" [(ngModel)]=dadosModel.casosAgosto
+                #casosAgosto="ngModel" class="form-control">
+        </div>
+        <div class="col">
+            <label for="casosSetembro">Casos em Setembro</label>
+            <input type="number" name="casosSetembro" id="casosSetembro" [(ngModel)]=dadosModel.casosSetembro
+                #casosSetembro="ngModel" class="form-control">
+        </div>
+    </div>
+    <button type="submit" class="btn submit-btn" (click)="drawChart()">Enviar</button>
+</form>
+
+<div class="center-div d-flex justify-content-center align-items-center">
+    <div id="chart_div"></div>
+</div>

@@ -1,0 +1,14 @@
+form {
+    width: 45%;
+    min-width: 340px;
+    margin: 0 auto;
+}
+
+.submit-btn {
+    background-color: #8a3ffc;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #a264ff;
+}
